@@ -10,5 +10,8 @@ spring:
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 
     producer:
-      bootstrap-servers:
-
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+server:
+  port: 8085
